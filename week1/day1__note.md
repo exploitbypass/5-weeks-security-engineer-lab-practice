@@ -96,6 +96,8 @@ Result:
 
 ## Post-Exploitation
 
+
+
 # After gaining root:
 # Directory exploration:
 
@@ -118,42 +120,48 @@ Result:
 ## Credential Harvesting 
 
 # Dumped Password Hashes:
-5-weeks-security-engineer-training/ ├── week1/ # Enumeration & initial exploitation │ ├── week1_notes.md # Lab notes and methodology │ ├── auto_enumeration.py# Custom scanning script │ └── screenshots/ # Evidence & lab screenshots ├── week2/ # Advanced web/API security ├── week3/ # OS & mobile exploitation ├── week4/ # AI security & automation └── week5/ # Job readiness & final projects
-''' cat /etc/shadow'''
 
-# Found multiple user accounts including :
+```bash
+cat /etc/shadow
+```
+
+
+Found multiple user accounts including :
 - root 
 - msfadmin
 - postgres
 - service
 - user
 
-# It shows the compromises of the system.
+It shows the compromises of the system.
+
 
 
 
 ## Permission Simulation
 
-# Created a backdoor user:
+** Created a backdoor user:**
 
-''' useradd ghost
+```bash
+	useradd ghost
 	passwd ********
-	usermod -aG sudo ghost'''
+	usermod -aG sudo ghost
+```
 
-# This simulates attacker persistence techniques.
+This simulates attacker persistence techniques.
 
 
 ![Description][auto_enumeration.py]
 
 
-# ** Purpose **
+** Purpose **
 
 - Automate Nmap Scan
 - Save Results for later analysis
 - Speed up reconnaissance workflow
 
 
-# ** Skills Practices **
+** Skills Practices **
 
 - Network Troubleshooting & Nmap enumeration
 - Service Fingerprinting + Exploit Research
