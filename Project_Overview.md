@@ -3,9 +3,9 @@
 
 ## Overview 
 
-# This repository documents my hands-on cybersecurity training which i mainly focused to get hands on experience and be job-ready in offensive secuirty and penetration testing.
+### This repository documents my hands-on cybersecurity training which i mainly focused to get hands on experience and be job-ready in offensive secuirty and penetration testing.
 
-# The goal of this 5-week routing is to build:
+### The goal of this 5-week routing is to build:
 
 - Practical enumeration skills
 - Learning Exploitation Methodology
@@ -15,19 +15,19 @@
 - Reporting Habits
 
 
-# All work is performed in secure way in virtualbox.
+## All work is performed in secure way in virtualbox.
 
 
 
 ## Setting Lab Environment 
 
-** Attacker Machine **
+###** Attacker Machine **
 - Kali Linux 
 
-# ** Target Machine **
+### ** Target Machine **
 - Metasploitable2 (vulnerable ubuntu vm)
 
-# ** Network Setup ** 
+### ** Network Setup ** 
 - Virtual Box
 - Adapter1 : Nat 
 - Adapter2 : Internal Network
