@@ -99,7 +99,7 @@ Result:
 
 
 # After gaining root:
-# Directory exploration:
+Directory exploration:
 
 ```bash
 	ls /
@@ -140,7 +140,7 @@ It shows the compromises of the system.
 
 ## Permission Simulation
 
-** Created a backdoor user:**
+ __Created a backdoor user:__
 
 ```bash
 	useradd ghost
