@@ -21,7 +21,7 @@
 
 ## Setting Lab Environment 
 
-# ** Attacker Machine **
+** Attacker Machine **
 - Kali Linux 
 
 # ** Target Machine **
