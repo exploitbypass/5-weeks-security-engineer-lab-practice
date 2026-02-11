@@ -56,12 +56,4 @@ sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0 up
 
 ### Repository Structure
 
-5-weeks-security-engineer-training/
-├── week1/ # Enumeration & initial exploitation
-│ ├── week1_notes.md # Lab notes and methodology
-│ ├── auto_enumeration.py# Custom scanning script
-│ └── screenshots/ # Evidence & lab screenshots
-├── week2/ # Advanced web/API security
-├── week3/ # OS & mobile exploitation
-├── week4/ # AI security & automation
-└── week5/ # Job readiness & final projects
+
