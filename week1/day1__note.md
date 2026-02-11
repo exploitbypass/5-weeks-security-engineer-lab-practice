@@ -44,7 +44,7 @@ Metasploitable2 exposes many vulnerable services for training, which provides ha
 
 ## FTP Exploitation Attempt
 
-** Target Service 
+__Target Service__
 > vsfpd 2.3.4 backdoor (decoy)
 
 Metasploit module:
@@ -71,7 +71,7 @@ Result:
 
 ## Samba Exploitation (True Success)
 
-** Target Service **
+__Target Service__
 samba 3.0.20
 Metasploit exploit:
 
@@ -154,14 +154,14 @@ This simulates attacker persistence techniques.
 ![Description][auto_enumeration.py]
 
 
-** Purpose **
+__Purpose__
 
 - Automate Nmap Scan
 - Save Results for later analysis
 - Speed up reconnaissance workflow
 
 
-** Skills Practices **
+__Skills Practices__
 
 - Network Troubleshooting & Nmap enumeration
 - Service Fingerprinting + Exploit Research
