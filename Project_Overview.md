@@ -40,7 +40,7 @@
 	sudo ip link set eth0 up'''
 
 > Metasploitable IP assigning
-''' sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0 up'''
+'''bash sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0 up'''
 
 
 
