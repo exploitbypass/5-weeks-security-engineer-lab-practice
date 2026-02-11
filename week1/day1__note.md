@@ -153,7 +153,7 @@ It shows the compromises of the system.
 This simulates attacker persistence techniques.
 
 
-![Description][auto_enumeration.py]
+[Python Script](week1/auto_enumeration.py)
 
 
 __Purpose__
