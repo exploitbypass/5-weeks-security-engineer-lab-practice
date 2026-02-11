@@ -4,7 +4,7 @@
 # Enumeration 
 
 
-##Objective 
+## Objective 
 
 ### This lab practices tends to help us understand how to enumerate a system as being a penetration tester. 
 
