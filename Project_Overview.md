@@ -1,55 +1,72 @@
-# 5 weeks Security Engineer Training --Begineer Friendly
+# 5 Weeks Security Engineer Training (Beginner Friendly)
 
+## Overview
 
-## Overview 
+This repository documents my hands-on cybersecurity training focused on becoming job-ready in **offensive security** and **penetration testing**.
 
-### This repository documents my hands-on cybersecurity training which i mainly focused to get hands on experience and be job-ready in offensive secuirty and penetration testing.
+The goal of this 5-week routine is to build real-world lab experience and professional security workflow habits.
 
-### The goal of this 5-week routing is to build:
+### Training Objectives
 
 - Practical enumeration skills
-- Learning Exploitation Methodology
-- Linux privilege awarness
+- Exploitation methodology
+- Linux privilege escalation awareness
 - Post-exploitation workflow
-- Automation Mindset
-- Reporting Habits
+- Security automation mindset
+- Reporting discipline
 
+All work is performed safely inside an isolated virtual lab environment.
 
-## All work is performed in secure way in virtualbox.
+---
 
+## Lab Environment Setup
 
+### Attacker Machine
 
-## Setting Lab Environment 
+- Kali Linux
 
-###** Attacker Machine **
-- Kali Linux 
+### Target Machine
 
-### ** Target Machine **
-- Metasploitable2 (vulnerable ubuntu vm)
+- Metasploitable2 (intentionally vulnerable Ubuntu VM)
 
-### ** Network Setup ** 
-- Virtual Box
-- Adapter1 : Nat 
-- Adapter2 : Internal Network
+### Virtual Network Setup
 
+- VirtualBox
+- Adapter 1 → NAT
+- Adapter 2 → Internal Network
 
-#Network trouble shooting commands
-> On kali vm
-''' sudo nmcli device connect eth0 up
-	sudo ip addr add 192.168.56.0/24 dev eth0
-	sudo ip link set eth0 up'''
+---
 
-> Metasploitable IP assigning
-'''bash sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0 up'''
+## Network Troubleshooting & Static IP Configuration
 
+VirtualBox internal networking did not automatically assign IP addresses. Manual configuration was required.
 
+### Kali Network Repair
+
+```bash
+sudo nmcli device connect eth0
+sudo ip addr add 192.168.56.1/24 dev eth0
+sudo ip link set eth0 up
+```
+
+### Metasploitable Static IP Assignment
+```bash
+sudo ifconfig eth0 192.168.56.10 netmask 255.255.255.0 up
+```
+
+### Repository Structure
 
 5-weeks-security-engineer-training/
-|
-|--- week1/
-|		  |
-|		  |--week1_notes.md
-|		  |--auto_enumeration.py
-|		  |--Screenshots/
-|
-|---week2/
+│
+├── week1/
+│   ├── week1_notes.md
+│   ├── auto_enumeration.py
+│   └── screenshots/
+│
+├── week2/
+│
+├── week3/
+│
+├── week4/
+│
+└── week5/
