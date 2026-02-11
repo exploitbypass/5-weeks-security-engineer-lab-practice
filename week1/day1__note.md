@@ -8,7 +8,7 @@
 
 ### This lab practices tends to help us understand how to enumerate a system as being a penetration tester. 
 
-## Learning Resources 
+### Learning Resources 
 
 - IppSec Enumeration Walkthrough
 - HackTricks methodology References
@@ -17,9 +17,11 @@
 > Consider enumeration more deeply than exploiting the system.
 
 
-## Nmap Full Scan 
+### Nmap Full Scan 
 
-''' nmap -sV -sC -O -v -o nmap_scan_output.txt 192.168.56.10'''
+```bash
+nmap -sV -sC -O -v -o nmap_scan_output.txt 192.168.56.10
+```
 
 ### Discovered major services:
 - Ftp(vsfpd 2.3.4)
